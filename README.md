@@ -7,16 +7,14 @@ Site do Studio Strapasson, antigo Strapasson Pilates.
 - No terminal (Ctrl+j), rode o comando `npm install -g firebase-tools`
 - Fazer login com o comando `firebase login`
 - Inicializar o projeto `firebase init`
-    * Digite "Y" para prosseguir
-    * Escolha a opção `Hosting`
+    * Are you ready to proceed? `Yes`
+    * Which Firebase features do you want to set up for this directory? Press Space to select features, then Enter to confirm your choices. `Hosting: Configure files for Firebase. Hosting and (optionally) set up GitHub Action deploys`
     * What do you want to use as your public directory? `public`
     * Configure as a single-page app (rewrite all urls to /index.html)? `Yes`
-    * Set up automatic builds and deploys with GitHub? `Yes`
+    * Set up automatic builds and deploys with GitHub? `No`
     * File public/index.html already exists. Overwrite? `No`
-    * For which GitHub repository would you like to set up a GitHub workflow? `dougcwb/studiostrapasson`
-    * Set up the workflow to run a build script before every deploy? `N` 
-    * GitHub workflow file for PR previews exists. Overwrite?  `N`
-    * Set up automatic deployment to your site's live channel when a PR is merged?  `Y`
-    * What is the name of the GitHub branch associated with your site's live channel? `main`
-    * The GitHub workflow file for deploying to the live channel already exists. Overwrite? `N`
-- Para finalizar e enviar as alterações `firebase deploy`
+- Faça as alterações necessárias no projeto
+- Para finalizar e enviar as alterações para o servidor use `firebase deploy`
+- Adicione os arquivos ao github `git add .`
+- Faça commit das modificações `git commit -m 'Modificações'`
+- Adicione os arquivos ao github `git push origin main`
